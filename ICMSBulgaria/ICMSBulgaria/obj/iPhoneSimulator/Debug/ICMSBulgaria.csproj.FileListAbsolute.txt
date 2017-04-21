@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\ICMSBulgaria.exe
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\ICMSBulgaria.pdb
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\Parse.iOS.dll
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\Parse.iOS.xml
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\optimized\Entitlements.plist
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ICMSBulgaria.exe
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ICMSBulgaria.pdb
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ICMSBulgaria.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ICMSBulgaria.exe.mdb
+C:\Users\user\Desktop\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\ICMSBulgaria.exe.mdb
