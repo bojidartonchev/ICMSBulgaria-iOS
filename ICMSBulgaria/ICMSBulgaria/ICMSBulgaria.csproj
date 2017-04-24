@@ -56,8 +56,9 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: bojidar.tonchev@gmail.com (9J8QJQ4JQ9)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>b8ef7155-75a0-4db9-a413-5b9d51838fe0</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -110,7 +111,6 @@
     <None Include="Info.plist" />
     <Compile Include="Models\News.cs" />
     <Compile Include="NewsTableSource.cs" />
-    <Compile Include="ParseObjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -133,7 +133,11 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Assets\icmsbg.png" />
+    <BundleResource Include="Assets\pentacolored.png" />
+    <BundleResource Include="Assets\pentawhite.png" />
     <Content Include="Entitlements.plist" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -30,11 +30,24 @@ namespace ICMSBulgaria
             //}
         }
 
-        public override void ViewDidLoad()
+        public async override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            news = new List<News>(ParseObjectManager.GetTasks());
+            List<News> results = new List<News>();
+            var query = ParseObject.GetQuery("News").OrderBy("CreatedAt");
+            IEnumerable<ParseObject> tasks = await query.FindAsync();
+            foreach (ParseObject task in tasks)
+            {
+                results.Add(new News
+                {
+                    ID = task.ObjectId,
+                    Title = task.Get<string>("title"),
+                    Content = task.Get<string>("content")
+                });
+            }
+
+            news = new List<News>(results);
             TableView.Source = new NewsTableSource(news.ToArray());
             TableView.ReloadData();
         }

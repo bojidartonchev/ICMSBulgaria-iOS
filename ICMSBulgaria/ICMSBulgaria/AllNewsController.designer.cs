@@ -14,5 +14,8 @@ namespace ICMSBulgaria
     [Register ("AllNewsController")]
     partial class AllNewsController
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }
