@@ -11,8 +11,8 @@ using UIKit;
 
 namespace ICMSBulgaria
 {
-    [Register ("All")]
-    partial class All
+    [Register ("ProgramController")]
+    partial class ProgramController
     {
         void ReleaseDesignerOutlets ()
         {

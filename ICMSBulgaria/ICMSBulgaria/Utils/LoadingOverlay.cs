@@ -14,7 +14,7 @@ namespace ICMSBulgaria.Utils
         {
             // configurable bits
             BackgroundColor = UIColor.Black;
-            Alpha = 0.75f;
+            Alpha = 0.25f;
             AutoresizingMask = UIViewAutoresizing.All;
 
             nfloat labelHeight = 22;
