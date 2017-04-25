@@ -101,8 +101,8 @@
     <Compile Include="All.designer.cs">
       <DependentUpon>All.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllNewsController.cs" />
-    <Compile Include="AllNewsController.designer.cs">
+    <Compile Include="ViewControllers\AllNewsController.cs" />
+    <Compile Include="ViewControllers\AllNewsController.designer.cs">
       <DependentUpon>AllNewsController.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
@@ -115,10 +115,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewController.designer.cs">
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="Utils\LoadingOverlay.cs" />
+    <Compile Include="ViewControllers\ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewControllers\ViewController.cs" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
