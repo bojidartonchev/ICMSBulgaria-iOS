@@ -17,8 +17,16 @@
       <LogicalName>Main.storyboardc/UINavigationController-19.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool-link\Main.storyboardc\UITableViewController-1258.nib">
+      <LogicalName>Main.storyboardc/UITableViewController-1258.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool-link\Main.storyboardc\UITableViewController-193.nib">
       <LogicalName>Main.storyboardc/UITableViewController-193.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool-link\NewsCell.nib">
+      <LogicalName>NewsCell.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>

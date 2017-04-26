@@ -42,7 +42,7 @@ namespace ICMSBulgaria
             base.ViewDidLoad();
 
             List<News> results = new List<News>();
-            var query = ParseObject.GetQuery("News").OrderBy("CreatedAt");
+            var query = ParseObject.GetQuery("News").OrderByDescending("createdAt");
             IEnumerable<ParseObject> tasks = await query.FindAsync();
             foreach (ParseObject task in tasks)
             {
@@ -50,7 +50,9 @@ namespace ICMSBulgaria
                 {
                     ID = task.ObjectId,
                     Title = task.Get<string>("title"),
-                    Content = task.Get<string>("content")
+                    Content = task.Get<string>("content"),
+                    Image = task.Get<ParseFile>("image"),
+                    Date = task.CreatedAt.Value
                 });
             }
 
@@ -62,6 +64,16 @@ namespace ICMSBulgaria
             {
                 loadingOverlay.Hide();
             }
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            // Initialize table
+            TableView.RowHeight = 150f;
+            TableView.EstimatedRowHeight = 150f;
+            TableView.ReloadData();
         }
     }
 }

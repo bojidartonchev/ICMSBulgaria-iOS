@@ -1,6 +1,10 @@
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\ICMSBulgaria.exe
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\ICMSBulgaria.pdb
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\Parse.iOS.dll
+C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\bin\iPhoneSimulator\Debug\Parse.iOS.xml
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\user\Desktop\ICMSBulgaria-iOS\trunk\ICMSBulgaria\ICMSBulgaria\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items

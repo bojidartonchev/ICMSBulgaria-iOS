@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parse;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,6 +15,8 @@ namespace ICMSBulgaria.Models
         public string ID { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public ParseFile Image { get; set; }
+        public DateTime Date { get; set; }
 
         public override string ToString()
         {

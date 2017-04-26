@@ -97,6 +97,11 @@ namespace ICMSBulgaria
             installation.SaveAsync();
         }
 
+        public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
+        {
+            new UIAlertView("Registration failed", error.LocalizedDescription, null, "OK", null).Show();
+        }
+
         public override void ReceivedRemoteNotification(UIApplication application,
             NSDictionary userInfo)
         {

@@ -98,6 +98,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Models\ProgramEvent.cs" />
+    <Compile Include="TableCells\NewsCell.cs" />
+    <Compile Include="TableCells\NewsCell.designer.cs">
+      <DependentUpon>NewsCell.cs</DependentUpon>
+    </Compile>
     <Compile Include="TableSources\ProgramTableSource.cs" />
     <Compile Include="Utils\FileHelper.cs" />
     <Compile Include="Utils\LocalDatabaseManager.cs" />
@@ -116,6 +120,7 @@
     <Compile Include="Models\News.cs" />
     <Compile Include="TableSources\NewsTableSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="TableCells\NewsCell.xib" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
