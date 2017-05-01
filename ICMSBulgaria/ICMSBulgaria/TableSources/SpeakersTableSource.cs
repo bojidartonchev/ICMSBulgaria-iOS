@@ -40,11 +40,11 @@ namespace ICMSBulgaria
             cell.ImageView.Image = UIImage.FromFile(item.Image);
 
 
-            cell.ImageView.Layer.CornerRadius = 15;
+            cell.ImageView.Layer.CornerRadius = 22;
             cell.ImageView.Layer.MasksToBounds = true;
             // if you want a border
-            cell.ImageView.Layer.BorderColor = UIColor.Blue.CGColor;
-            cell.ImageView.Layer.BorderWidth = 1.1f;
+            //cell.ImageView.Layer.BorderColor = UIColor.Blue.CGColor;
+            //cell.ImageView.Layer.BorderWidth = 1.1f;
 
             return cell;
         }
