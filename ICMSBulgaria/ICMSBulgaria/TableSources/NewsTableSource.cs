@@ -33,9 +33,16 @@ namespace ICMSBulgaria
                 cell = NewsCell.Create();
             }
             cell.Model = item;
+            cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 
             return cell;
         }
 
+        public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            News newsSelected = TableItems[indexPath.Row];
+
+            tableView.DeselectRow(indexPath, true);
+        }
     }
 }

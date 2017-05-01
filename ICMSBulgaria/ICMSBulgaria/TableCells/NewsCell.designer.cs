@@ -16,31 +16,31 @@ namespace ICMSBulgaria
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel NewsCellDate { get; set; }
+        UIKit.UIImageView Image { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView NewsCellImage { get; set; }
+        UIKit.UILabel Subtitle { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel NewsCellTitle { get; set; }
+        UIKit.UILabel Title { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (NewsCellDate != null) {
-                NewsCellDate.Dispose ();
-                NewsCellDate = null;
+            if (Image != null) {
+                Image.Dispose ();
+                Image = null;
             }
 
-            if (NewsCellImage != null) {
-                NewsCellImage.Dispose ();
-                NewsCellImage = null;
+            if (Subtitle != null) {
+                Subtitle.Dispose ();
+                Subtitle = null;
             }
 
-            if (NewsCellTitle != null) {
-                NewsCellTitle.Dispose ();
-                NewsCellTitle = null;
+            if (Title != null) {
+                Title.Dispose ();
+                Title = null;
             }
         }
     }

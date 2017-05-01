@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CoreGraphics;
+using Foundation;
 using ICMSBulgaria.Models;
 using System;
 using UIKit;
@@ -14,6 +15,7 @@ namespace ICMSBulgaria
 
         public NewsCell (IntPtr handle) : base (handle)
         {
+            Image = new UIImageView();
         }
 
         public static NewsCell Create()
@@ -24,11 +26,15 @@ namespace ICMSBulgaria
         {
             base.LayoutSubviews();
 
-            this.NewsCellTitle.Text = Model.Title;
-            this.NewsCellDate.Text = String.Format("{0:dd/dd/yy}", Model.Date);
+            Image.Frame = new CGRect(15, 15, 100, 100);
+            Image.ContentMode = UIViewContentMode.ScaleAspectFill;
+            Title.Frame = new CGRect(130, 30, ContentView.Bounds.Width - 130, 25);
+            Subtitle.Frame = new CGRect(130, 80, ContentView.Bounds.Width - 130, 25);
 
-            this.NewsCellImage.Image = FromUrl(Model.Image.Url.ToString());
-            this.NewsCellImage.SizeToFit();
+            this.Title.Text = Model.Title;
+            this.Subtitle.Text = String.Format("{0:dd/MM/yy}", Model.Date);
+
+            this.Image.Image = FromUrl(Model.Image.Url.ToString());
         }
 
         static UIImage FromUrl(string uri)
@@ -37,5 +43,5 @@ namespace ICMSBulgaria
             using (var data = NSData.FromUrl(url))
                 return UIImage.LoadFromData(data);
         }
-    }
+    }    
 }
