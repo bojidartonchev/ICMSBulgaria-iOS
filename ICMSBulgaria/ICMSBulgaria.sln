@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICMSBulgaria", "ICMSBulgaria\ICMSBulgaria.csproj", "{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}"
 EndProject
@@ -27,6 +27,7 @@ Global
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{8809B520-5D5F-4D30-A97B-9DBD7A47C66B}.Release|iPhone.ActiveCfg = Release|iPhone

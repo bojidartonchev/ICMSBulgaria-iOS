@@ -34,6 +34,8 @@
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchFloat32>False</MtouchFloat32>
+    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
+    <IOSDebuggerPort>10000</IOSDebuggerPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -57,8 +59,10 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer: bojidar.tonchev@gmail.com (9J8QJQ4JQ9)</CodesignKey>
-    <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>b8ef7155-75a0-4db9-a413-5b9d51838fe0</CodesignProvision>
+    <MtouchDebug>True</MtouchDebug>
+    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
+    <IOSDebuggerPort>10000</IOSDebuggerPort>
+    <CodesignProvision>1d387851-b0fb-46ea-b0a6-c15d05377ff5</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -97,7 +101,13 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Models\Speaker.cs" />
     <Compile Include="Models\ProgramEvent.cs" />
+    <Compile Include="TableSources\SpeakersTableSource.cs" />
+    <Compile Include="ViewControllers\SpeakersViewController.cs" />
+    <Compile Include="ViewControllers\SpeakersViewController.designer.cs">
+      <DependentUpon>SpeakersViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="TableCells\NewsCell.cs" />
     <Compile Include="TableCells\NewsCell.designer.cs">
       <DependentUpon>NewsCell.cs</DependentUpon>
@@ -105,6 +115,12 @@
     <Compile Include="TableSources\ProgramTableSource.cs" />
     <Compile Include="Utils\FileHelper.cs" />
     <Compile Include="Utils\LocalDatabaseManager.cs" />
+    <Compile Include="Utils\MapDelegate.cs" />
+    <Compile Include="Utils\VenueAnnotation.cs" />
+    <Compile Include="ViewControllers\VenuesViewController.cs" />
+    <Compile Include="ViewControllers\VenuesViewController.designer.cs">
+      <DependentUpon>VenuesViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewControllers\ProgramController.cs" />
     <Compile Include="ViewControllers\ProgramController.designer.cs">
       <DependentUpon>ProgramController.cs</DependentUpon>
@@ -163,11 +179,24 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Assets\icmsbg.png" />
-    <BundleResource Include="Assets\pentacolored.png" />
-    <BundleResource Include="Assets\pentawhite.png" />
+    <BundleResource Include="Assets\parveenkumar.jpg" />
+    <BundleResource Include="Assets\gianniangelini.jpg" />
+    <BundleResource Include="Assets\rebeccaspencer.jpg" />
+    <BundleResource Include="Assets\robertthomas.jpg" />
+    <BundleResource Include="Assets\tomashanke.jpg" />
+    <BundleResource Include="Assets\mikeclark.jpg" />
     <Content Include="Entitlements.plist" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Images.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

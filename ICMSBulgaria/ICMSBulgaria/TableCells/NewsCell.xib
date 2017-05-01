@@ -14,7 +14,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7" translatesAutoresizingMaskIntoConstraints="NO" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="105.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="105"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" text="Label">
                         <rect key="frame" x="0.0" y="84" width="240" height="21"/>
@@ -55,5 +55,6 @@
         <image name="Assets/icmsbg.png" width="815" height="557"/>
         <image name="Assets/pentacolored.png" width="450" height="500"/>
         <image name="Assets/pentawhite.png" width="450" height="500"/>
+        <image name="Assets/17800125_1480053795360855_7228450196756779869_n.jpg" width="768" height="960"/>
     </resources>
 </document>

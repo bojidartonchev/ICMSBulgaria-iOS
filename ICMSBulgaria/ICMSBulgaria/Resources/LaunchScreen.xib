@@ -11,12 +11,6 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2" translatesAutoresizingMaskIntoConstraints="NO" image="Assets/icmsbg.png">
                     <rect key="frame" x="120" y="108" width="240" height="128"/>
                     <constraints>
@@ -26,11 +20,7 @@
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint id="3" firstItem="iN0-l3-epB" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" constant="244"/>
                 <constraint id="4" firstItem="2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120"/>
                 <constraint id="8" firstItem="2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="108"/>
@@ -39,11 +29,13 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
+            <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
         </view>
     </objects>
     <resources>
         <image name="Assets/icmsbg.png" width="815" height="557"/>
         <image name="Assets/pentacolored.png" width="450" height="500"/>
         <image name="Assets/pentawhite.png" width="450" height="500"/>
+        <image name="Assets/17800125_1480053795360855_7228450196756779869_n.jpg" width="768" height="960"/>
     </resources>
 </document>

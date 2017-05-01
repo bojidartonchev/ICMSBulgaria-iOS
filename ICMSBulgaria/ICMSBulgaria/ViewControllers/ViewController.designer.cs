@@ -16,7 +16,7 @@ namespace ICMSBulgaria
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton AllNewsButton { get; set; }
+        UIKit.UIButton NewsButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -24,9 +24,9 @@ namespace ICMSBulgaria
 
         void ReleaseDesignerOutlets ()
         {
-            if (AllNewsButton != null) {
-                AllNewsButton.Dispose ();
-                AllNewsButton = null;
+            if (NewsButton != null) {
+                NewsButton.Dispose ();
+                NewsButton = null;
             }
 
             if (ProgramButton != null) {
