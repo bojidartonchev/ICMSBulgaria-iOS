@@ -17,6 +17,15 @@ namespace ICMSBulgaria
         {            
         }
 
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            this.NavigationController.NavigationBar.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
+            this.NavigationController.NavigationBar.ShadowImage = new UIImage();
+            this.NavigationController.NavigationBar.Translucent = false;
+        }
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();

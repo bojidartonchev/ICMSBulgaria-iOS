@@ -41,10 +41,11 @@
                 <outlet property="Title" destination="70" id="name-outlet-70"/>
                 <outlet property="Subtitle" destination="71" id="name-outlet-71"/>
             </connections>
+            <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="0"/>
+            <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="0"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Assets/pentacolored.png" width="450" height="500"/>
         <image name="Assets/pentawhite.png" width="450" height="500"/>
         <image name="Assets/17800125_1480053795360855_7228450196756779869_n.jpg" width="768" height="960"/>
         <image name="Assets/gianniangelini.jpg" width="198" height="206"/>
@@ -53,5 +54,15 @@
         <image name="Assets/rebeccaspencer.jpg" width="279" height="290"/>
         <image name="Assets/robertthomas.jpg" width="399" height="391"/>
         <image name="Assets/tomashanke.jpg" width="518" height="480"/>
+        <image name="Assets/backgroundmain.jpg" width="1440" height="2560"/>
+        <image name="Assets/backgroundsecondary.jpg" width="1440" height="2560"/>
+        <image name="Assets/contact.png" width="140" height="140"/>
+        <image name="Assets/networking.png" width="140" height="140"/>
+        <image name="Assets/news.png" width="140" height="140"/>
+        <image name="Assets/schedule.png" width="140" height="140"/>
+        <image name="Assets/sessions.png" width="140" height="140"/>
+        <image name="Assets/speakers.png" width="140" height="140"/>
+        <image name="Assets/venues.png" width="140" height="140"/>
+        <image name="Assets/workshops.png" width="140" height="140"/>
     </resources>
 </document>

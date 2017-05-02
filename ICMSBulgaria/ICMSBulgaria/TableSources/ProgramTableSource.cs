@@ -35,7 +35,8 @@ namespace ICMSBulgaria
             { cell = new UITableViewCell(UITableViewCellStyle.Subtitle, CellIdentifier); }
 
             cell.TextLabel.Text = item.Title;
-            cell.DetailTextLabel.Text = item.Location + " at " + item.Time; 
+            cell.DetailTextLabel.Text = item.Location + " at " + item.Time;
+            cell.BackgroundColor = UIColor.Clear;
 
             return cell;
         }

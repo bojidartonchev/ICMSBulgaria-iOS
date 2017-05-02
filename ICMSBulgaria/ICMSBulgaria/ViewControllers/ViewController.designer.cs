@@ -16,14 +16,36 @@ namespace ICMSBulgaria
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView MainMenuImageBackground { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton NetworkingButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton NewsButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ProgramButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton WorkshopsButton { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (MainMenuImageBackground != null) {
+                MainMenuImageBackground.Dispose ();
+                MainMenuImageBackground = null;
+            }
+
+            if (NetworkingButton != null) {
+                NetworkingButton.Dispose ();
+                NetworkingButton = null;
+            }
+
             if (NewsButton != null) {
                 NewsButton.Dispose ();
                 NewsButton = null;
@@ -32,6 +54,11 @@ namespace ICMSBulgaria
             if (ProgramButton != null) {
                 ProgramButton.Dispose ();
                 ProgramButton = null;
+            }
+
+            if (WorkshopsButton != null) {
+                WorkshopsButton.Dispose ();
+                WorkshopsButton = null;
             }
         }
     }

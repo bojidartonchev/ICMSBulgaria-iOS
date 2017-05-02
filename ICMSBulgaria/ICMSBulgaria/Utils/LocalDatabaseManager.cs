@@ -20,6 +20,7 @@ namespace ICMSBulgaria.Utils
                 {
                     InitProgramEventsTable();
                     InitSpeakersTable();
+                    InitNetworkingTable();
                 }
             }            
         }
@@ -204,6 +205,74 @@ namespace ICMSBulgaria.Utils
             using (var conn = new SQLite.SQLiteConnection(FileHelper.GetLocalFilePath(DATABASE_NAME)))
             {
                 var entities = conn.Table<Speaker>().OrderBy(m => m.ID).ToList();
+                return entities;
+            }
+        }
+
+        private static void InitNetworkingTable()
+        {
+            string dbPath = FileHelper.GetLocalFilePath(DATABASE_NAME);
+
+            using (var db = new SQLite.SQLiteConnection(dbPath))
+            {
+                if (TableExists<Networking>(db))
+                {
+                    return;
+                }
+
+                db.CreateTable<Networking>();
+
+                var prNetworking = new Networking { Title = "“Welcome” cocktail", Content = "It’ll take place at the Main Congress Venue on " +
+                    "the 2nd Floor at 20:00h right after official opening ceremony. Participants will get the chance " +
+                    "to introduce themselves, meet fellow colleagues and start making new friendships and unforgettable" +
+                    " memories.", Location = "Main Congress Venue 2nd Floor", Date = "Thursday, 11 May 2017, 20:00h"
+                };
+                db.Insert(prNetworking);
+
+                prNetworking = new Networking
+                {
+                    Title = "“As Bulgarians” the project",
+                    Content = "This event will take place at …………." +
+                    " at 20:00h. When you are participating ICMS 2017 you are obviously smart. But do you dare " +
+                    "to try dancing and acting like traditional Bulgarians? If you have the required courage we are " +
+                    "gladly expecting you.  We have organized for you an evening with typical Bulgarian cuisine and dances." +
+                    " The entertainment is guaranteed for sure!",
+                    Location = "*The meeting point will be ………...",
+                    Date = "Friday, 12 May 2017, 20:00h"
+                };
+                db.Insert(prNetworking);
+
+                prNetworking = new Networking
+                {
+                    Title = "Free Sofia Walk Tour",
+                    Content = "We provide you an opportunity to dive into Sofia, to dive into history." +
+                    " Through out to more than 1300 years you will have the chance to explore one of the oldest culture in Europe. " +
+                    "The tour will take you to the temples and monuments emblematic for our country and folks.",
+                    Location = "National Palace of Culture",
+                    Date = "Saturday, 13 May 2017, 19:30h"
+                };
+                db.Insert(prNetworking);
+
+                prNetworking = new Networking
+                {
+                    Title = "Closing party",
+                    Content = "We invite to private closing party to rock on together one last time.Suit up because " +
+                    "the Theme of the party will be “Bone Marrow”. Your dress code must include Erythrocytes (red color), Leukocytes " +
+                    "(white color) or Plate cells (black color). To get your free welcome drink at the entrance make sure to say the special " +
+                    "password. PASSWORD: I’m not a virus!!!",
+                    Location = "NDK, 1 Bulgaria Square",
+                    Date = "Sunday, 14 May 2017, 22:00h"
+                };
+                db.Insert(prNetworking);
+            }
+
+        }
+
+        public static List<Networking> GetNetworking()
+        {
+            using (var conn = new SQLite.SQLiteConnection(FileHelper.GetLocalFilePath(DATABASE_NAME)))
+            {
+                var entities = conn.Table<Networking>().OrderBy(m => m.ID).ToList();
                 return entities;
             }
         }

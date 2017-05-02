@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CoreGraphics;
+using Foundation;
 using ICMSBulgaria.Models;
 using ICMSBulgaria.Utils;
 using System;
@@ -57,6 +58,20 @@ namespace ICMSBulgaria
             View.AddSubview(webView);
             webView.LoadRequest(new NSUrlRequest(new NSUrl(url)));
             webView.ScalesPageToFit = true;
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            var image = new UIImageView();
+            image.Frame = new CGRect(0, 0, View.Bounds.Width, View.Bounds.Height);
+            image.Image = UIImage.FromFile("Assets/backgroundsecondary.jpg");
+            TableView.BackgroundView = image;
+
+            this.NavigationController.NavigationBar.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
+            this.NavigationController.NavigationBar.ShadowImage = new UIImage();
+            this.NavigationController.NavigationBar.Translucent = false;
         }
     }
 }

@@ -9,12 +9,12 @@ using UIKit;
 
 namespace ICMSBulgaria
 {
-    public partial class AllNewsController : UITableViewController
+    public partial class WorkshopsController : UITableViewController
     {
-        private List<News> news;
+        private List<Workshops> news;
         private LoadingOverlay loadingOverlay;
 
-        public AllNewsController(IntPtr handle) : base (handle)
+        public WorkshopsController (IntPtr handle) : base (handle)
         {
             var bounds = UIScreen.MainScreen.Bounds;
 
@@ -23,45 +23,30 @@ namespace ICMSBulgaria
             View.Add(loadingOverlay);
         }
 
-        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
-        {
-            //if (segue.Identifier == "TaskSegue")
-            //{ // set in Storyboard
-            //    var navctlr = segue.DestinationViewController as TaskDetailViewController;
-            //    if (navctlr != null)
-            //    {
-            //        var source = TableView.Source as RootTableSource;
-            //        var rowPath = TableView.IndexPathForSelectedRow;
-            //        var item = source.GetItem(rowPath.Row);
-            //        navctlr.SetTask(item);
-            //    }
-            //}
-        }
-
         public async override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            List<News> results = new List<News>();
-            var query = ParseObject.GetQuery("News").OrderByDescending("createdAt");
+            List<Workshops> results = new List<Workshops>();
+            var query = ParseObject.GetQuery("Workshops").OrderBy("date");
             IEnumerable<ParseObject> tasks = await query.FindAsync();
             foreach (ParseObject task in tasks)
             {
-                results.Add(new News
+                results.Add(new Workshops
                 {
                     ID = task.ObjectId,
                     Title = task.Get<string>("title"),
                     Content = task.Get<string>("content"),
-                    Image = task.Get<ParseFile>("image"),
-                    Date = task.CreatedAt.Value
+                    Date = task.Get<DateTime>("date"),
+                    Location = task.Get<string>("location")
                 });
             }
 
-            news = new List<News>(results);
-            TableView.Source = new NewsTableSource(news.ToArray());
+            news = new List<Workshops>(results);
+            TableView.Source = new WorkshopsTableSource(news.ToArray());
             TableView.ReloadData();
 
-            if(loadingOverlay != null)
+            if (loadingOverlay != null)
             {
                 loadingOverlay.Hide();
             }
@@ -72,12 +57,12 @@ namespace ICMSBulgaria
             base.ViewWillAppear(animated);
 
             // Initialize table
-            TableView.RowHeight = 130f;
-            TableView.EstimatedRowHeight = 130f;
+            TableView.RowHeight = 250f;
+            TableView.EstimatedRowHeight = 250f;
             TableView.ReloadData();
-            
-            TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLineEtched;
-            
+
+            TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+
             var image = new UIImageView();
             image.Frame = new CGRect(0, 0, View.Bounds.Width, View.Bounds.Height);
             image.Image = UIImage.FromFile("Assets/backgroundsecondary.jpg");

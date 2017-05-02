@@ -45,6 +45,7 @@ namespace ICMSBulgaria
             // if you want a border
             //cell.ImageView.Layer.BorderColor = UIColor.Blue.CGColor;
             //cell.ImageView.Layer.BorderWidth = 1.1f;
+            cell.BackgroundColor = UIColor.Clear;
 
             return cell;
         }
