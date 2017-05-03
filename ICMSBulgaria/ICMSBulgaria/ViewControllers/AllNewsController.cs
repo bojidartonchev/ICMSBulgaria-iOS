@@ -52,13 +52,13 @@ namespace ICMSBulgaria
                     ID = task.ObjectId,
                     Title = task.Get<string>("title"),
                     Content = task.Get<string>("content"),
-                    Image = task.Get<ParseFile>("image"),
+                    Image = task.Get<ParseFile>("image").Url.ToString(),
                     Date = task.CreatedAt.Value
                 });
             }
 
             news = new List<News>(results);
-            TableView.Source = new NewsTableSource(news.ToArray());
+            TableView.Source = new NewsTableSource(news.ToArray(), this);
             TableView.ReloadData();
 
             if(loadingOverlay != null)
@@ -86,6 +86,16 @@ namespace ICMSBulgaria
             this.NavigationController.NavigationBar.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
             this.NavigationController.NavigationBar.ShadowImage = new UIImage();
             this.NavigationController.NavigationBar.Translucent = false;
+        }
+
+        public void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            News newsSelected = news[indexPath.Row];
+            
+            SingleNewsViewController ctrl = Storyboard.InstantiateViewController("SingleNewsViewController") as SingleNewsViewController;
+            ctrl.ModalTransitionStyle = UIModalTransitionStyle.FlipHorizontal;
+            ctrl.NewsObject = newsSelected;
+            NavigationController.PushViewController(ctrl, true);
         }
     }
 }

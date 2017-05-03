@@ -105,6 +105,10 @@
     <Compile Include="Models\Workshops.cs" />
     <Compile Include="Models\Speaker.cs" />
     <Compile Include="Models\ProgramEvent.cs" />
+    <Compile Include="ViewControllers\SingleNewsViewController.cs" />
+    <Compile Include="ViewControllers\SingleNewsViewController.designer.cs">
+      <DependentUpon>SingleNewsViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="TableCells\NetworkingCell.cs" />
     <Compile Include="TableCells\NetworkingCell.designer.cs">
       <DependentUpon>NetworkingCell.cs</DependentUpon>
@@ -173,6 +177,7 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Parse.iOS, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Parse.1.7.0\lib\Xamarin.iOS10\Parse.iOS.dll</HintPath>
       <Private>True</Private>

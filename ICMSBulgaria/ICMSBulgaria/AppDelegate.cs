@@ -1,5 +1,9 @@
 ﻿using Foundation;
+using ICMSBulgaria.Models;
+using Newtonsoft.Json.Linq;
 using Parse;
+using System;
+using System.Collections.Generic;
 using UIKit;
 
 namespace ICMSBulgaria
@@ -43,8 +47,9 @@ namespace ICMSBulgaria
             UIApplication.SharedApplication.RegisterForRemoteNotifications();
 
             // Handle Push Notifications
-            ParsePush.ParsePushNotificationReceived += (object sender, ParsePushNotificationEventArgs args) => {
-                // Process Push Notification payload here.
+            ParsePush.ParsePushNotificationReceived += (object sender, ParsePushNotificationEventArgs args) =>
+            {
+                // Process Push Notification payload here.                
             };
 
             return true;

@@ -11,10 +11,12 @@ namespace ICMSBulgaria
     {
 
         News[] TableItems;
+        AllNewsController Owner;
         string CellIdentifier = "TableCell";
 
-        public NewsTableSource(News[] items)
+        public NewsTableSource(News[] items, AllNewsController owner)
         {
+            Owner = owner;
             TableItems = items;
         }
 
@@ -39,8 +41,8 @@ namespace ICMSBulgaria
         }
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
-        {
-            News newsSelected = TableItems[indexPath.Row];
+        {            
+            Owner.RowSelected(tableView, indexPath);
 
             tableView.DeselectRow(indexPath, true);
         }

@@ -34,7 +34,7 @@ namespace ICMSBulgaria
             this.Title.Text = Model.Title;
             this.Subtitle.Text = String.Format("{0:dd/MM/yy}", Model.Date);
 
-            this.Image.Image = FromUrl(Model.Image.Url.ToString());
+            this.Image.Image = FromUrl(Model.Image);
         }
 
         static UIImage FromUrl(string uri)

@@ -229,6 +229,19 @@
             </objects>
             <point key="canvasLocation" x="1112" y="343"/>
         </scene>
+        <scene sceneID="4849">
+            <objects>
+                <viewController id="4850" sceneMemberID="viewController" customClass="SingleNewsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" storyboardIdentifier="SingleNewsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4847"/>
+                        <viewControllerLayoutGuide type="bottom" id="4848"/>
+                    </layoutGuides>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4852" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="-853"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Assets/gianniangelini.jpg" width="198" height="206"/>
