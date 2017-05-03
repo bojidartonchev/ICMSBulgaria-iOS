@@ -27,28 +27,36 @@ namespace ICMSBulgaria
         {
             base.ViewDidLoad();
 
-            List<Workshops> results = new List<Workshops>();
-            var query = ParseObject.GetQuery("Workshops").OrderBy("date");
-            IEnumerable<ParseObject> tasks = await query.FindAsync();
-            foreach (ParseObject task in tasks)
+            try
             {
-                results.Add(new Workshops
+                List<Workshops> results = new List<Workshops>();
+                var query = ParseObject.GetQuery("Workshops").OrderBy("date");
+                IEnumerable<ParseObject> tasks = await query.FindAsync();
+                foreach (ParseObject task in tasks)
                 {
-                    ID = task.ObjectId,
-                    Title = task.Get<string>("title"),
-                    Content = task.Get<string>("content"),
-                    Date = task.Get<DateTime>("date"),
-                    Location = task.Get<string>("location")
-                });
+                    results.Add(new Workshops
+                    {
+                        ID = task.ObjectId,
+                        Title = task.Get<string>("title"),
+                        Content = task.Get<string>("content"),
+                        Date = task.Get<DateTime>("date"),
+                        Location = task.Get<string>("location")
+                    });
+                }
+
+                news = new List<Workshops>(results);
+                TableView.Source = new WorkshopsTableSource(news.ToArray());
+                TableView.ReloadData();
             }
-
-            news = new List<Workshops>(results);
-            TableView.Source = new WorkshopsTableSource(news.ToArray());
-            TableView.ReloadData();
-
-            if (loadingOverlay != null)
+            catch (Exception e)
             {
-                loadingOverlay.Hide();
+            }
+            finally
+            {
+                if (loadingOverlay != null)
+                {
+                    loadingOverlay.Hide();
+                }
             }
         }
 

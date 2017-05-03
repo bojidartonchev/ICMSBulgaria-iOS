@@ -41,29 +41,36 @@ namespace ICMSBulgaria
         public async override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
-            List<News> results = new List<News>();
-            var query = ParseObject.GetQuery("News").OrderByDescending("createdAt");
-            IEnumerable<ParseObject> tasks = await query.FindAsync();
-            foreach (ParseObject task in tasks)
+            try
             {
-                results.Add(new News
+                List<News> results = new List<News>();
+                var query = ParseObject.GetQuery("News").OrderByDescending("createdAt");
+                IEnumerable<ParseObject> tasks = await query.FindAsync();
+                foreach (ParseObject task in tasks)
                 {
-                    ID = task.ObjectId,
-                    Title = task.Get<string>("title"),
-                    Content = task.Get<string>("content"),
-                    Image = task.Get<ParseFile>("image").Url.ToString(),
-                    Date = task.CreatedAt.Value
-                });
+                    results.Add(new News
+                    {
+                        ID = task.ObjectId,
+                        Title = task.Get<string>("title"),
+                        Content = task.Get<string>("content"),
+                        Image = task.Get<ParseFile>("image").Url.ToString(),
+                        Date = task.CreatedAt.Value
+                    });
+                }
+
+                news = new List<News>(results);
+                TableView.Source = new NewsTableSource(news.ToArray(), this);
+                TableView.ReloadData();
             }
-
-            news = new List<News>(results);
-            TableView.Source = new NewsTableSource(news.ToArray(), this);
-            TableView.ReloadData();
-
-            if(loadingOverlay != null)
+            catch (Exception e)
             {
-                loadingOverlay.Hide();
+            }
+            finally
+            {
+                if (loadingOverlay != null)
+                {
+                    loadingOverlay.Hide();
+                }
             }
         }
 

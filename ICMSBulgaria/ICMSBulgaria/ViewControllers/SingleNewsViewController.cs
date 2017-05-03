@@ -26,7 +26,7 @@ namespace ICMSBulgaria
             var newsImage = new UIImageView();            
             newsImage.Image = FromUrl(NewsObject.Image);
             newsImage.Frame = new CGRect(15, 90, View.Bounds.Width - 30, 150);
-            newsImage.ContentMode = UIViewContentMode.ScaleAspectFill;
+            newsImage.ContentMode = UIViewContentMode.ScaleAspectFit;
             newsImage.ClipsToBounds = true;
             newsImage.Layer.CornerRadius = 5;
             newsImage.Layer.MasksToBounds = true;
