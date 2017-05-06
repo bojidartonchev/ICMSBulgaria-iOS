@@ -19,13 +19,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" id="5" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="NO" numberOfLines="6">
-                        <rect key="frame" x="60" y="37" width="204" height="87"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                        <string key="text">sfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfas</string>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                         <rect key="frame" x="20" y="104" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -44,7 +37,6 @@
             <point key="canvasLocation" x="-390.5" y="-216"/>
             <connections>
                 <outlet property="Title" destination="4" id="name-outlet-4"/>
-                <outlet property="Description" destination="5" id="name-outlet-5"/>
                 <outlet property="Location" destination="6" id="name-outlet-6"/>
                 <outlet property="Date" destination="7" id="name-outlet-7"/>
             </connections>
@@ -69,5 +61,7 @@
         <image name="Assets/speakers.png" width="140" height="140"/>
         <image name="Assets/venues.png" width="140" height="140"/>
         <image name="Assets/workshops.png" width="140" height="140"/>
+        <image name="Assets/clock.png" width="85" height="85"/>
+        <image name="Assets/locmarker.png" width="90" height="90"/>
     </resources>
 </document>

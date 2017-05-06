@@ -104,6 +104,16 @@
                                     <segue id="4836" destination="193" kind="show"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4871" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="462" width="143" height="30"/>
+                                <state key="normal" title="Contacts">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="5244" destination="4867" kind="show"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -115,6 +125,7 @@
                                 <exclude reference="4685"/>
                                 <exclude reference="4697"/>
                                 <exclude reference="4717"/>
+                                <exclude reference="4871"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="4728"/>
@@ -133,6 +144,7 @@
                                 <include reference="4685"/>
                                 <include reference="4697"/>
                                 <include reference="4717"/>
+                                <include reference="4871"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="4728"/>
@@ -154,6 +166,7 @@
                         <outlet property="NetworkingButton" destination="4429" id="name-outlet-4429"/>
                         <outlet property="MainMenuImageBackground" destination="4685" id="name-outlet-4685"/>
                         <outlet property="NewsButton" destination="4697" id="name-outlet-4697"/>
+                        <outlet property="ContactsButton" destination="4871" id="name-outlet-4871"/>
                     </connections>
                     <navigationItem title="ICMS Bulgaria" id="189" key="navigationItem"/>
                 </viewController>
@@ -242,6 +255,18 @@
             </objects>
             <point key="canvasLocation" x="8" y="-853"/>
         </scene>
+        <scene sceneID="4866">
+            <objects>
+                <viewController id="4867" sceneMemberID="viewController" customClass="ContactsViewController" title="Contacts">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4864"/>
+                        <viewControllerLayoutGuide type="bottom" id="4865"/>
+                    </layoutGuides>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4869" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="-413"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Assets/gianniangelini.jpg" width="198" height="206"/>
@@ -261,6 +286,8 @@
         <image name="Assets/venues.png" width="140" height="140"/>
         <image name="Assets/workshops.png" width="140" height="140"/>
         <image name="Assets/icmsbg.png" width="815" height="557"/>
+        <image name="Assets/clock.png" width="85" height="85"/>
+        <image name="Assets/locmarker.png" width="90" height="90"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>

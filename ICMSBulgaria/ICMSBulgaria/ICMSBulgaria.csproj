@@ -101,6 +101,10 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ViewControllers\ContactsViewController.cs" />
+    <Compile Include="ViewControllers\ContactsViewController.designer.cs">
+      <DependentUpon>ContactsViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Networking.cs" />
     <Compile Include="Models\Workshops.cs" />
     <Compile Include="Models\Speaker.cs" />

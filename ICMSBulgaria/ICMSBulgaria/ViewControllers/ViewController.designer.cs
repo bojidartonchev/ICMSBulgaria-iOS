@@ -16,6 +16,10 @@ namespace ICMSBulgaria
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton ContactsButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView MainMenuImageBackground { get; set; }
 
         [Outlet]
@@ -36,6 +40,11 @@ namespace ICMSBulgaria
 
         void ReleaseDesignerOutlets ()
         {
+            if (ContactsButton != null) {
+                ContactsButton.Dispose ();
+                ContactsButton = null;
+            }
+
             if (MainMenuImageBackground != null) {
                 MainMenuImageBackground.Dispose ();
                 MainMenuImageBackground = null;
