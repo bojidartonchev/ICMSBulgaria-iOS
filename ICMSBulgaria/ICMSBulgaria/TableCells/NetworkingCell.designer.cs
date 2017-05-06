@@ -19,10 +19,6 @@ namespace ICMSBulgaria.TableCells
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel Description { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel Location { get; set; }
 
         [Outlet]
@@ -34,11 +30,6 @@ namespace ICMSBulgaria.TableCells
             if (Date != null) {
                 Date.Dispose ();
                 Date = null;
-            }
-
-            if (Description != null) {
-                Description.Dispose ();
-                Description = null;
             }
 
             if (Location != null) {

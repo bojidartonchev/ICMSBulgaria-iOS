@@ -223,6 +223,8 @@
     <BundleResource Include="Assets\workshops.png" />
     <BundleResource Include="Assets\backgroundmain.jpg" />
     <BundleResource Include="Assets\icmsbg.png" />
+    <BundleResource Include="Assets\clock.png" />
+    <BundleResource Include="Assets\locmarker.png" />
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>

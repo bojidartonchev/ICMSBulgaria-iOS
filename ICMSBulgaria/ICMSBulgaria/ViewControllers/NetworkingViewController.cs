@@ -41,8 +41,8 @@ namespace ICMSBulgaria
             base.ViewWillAppear(animated);
 
             // Initialize table
-            TableView.RowHeight = 250f;
-            TableView.EstimatedRowHeight = 250f;
+            TableView.RowHeight = 210f;
+            TableView.EstimatedRowHeight = 210f;
             TableView.ReloadData();
 
             TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;

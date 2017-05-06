@@ -13,27 +13,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="318" height="173"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
                         <rect key="frame" x="138" y="8" width="42" height="21"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" id="5" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="NO" numberOfLines="6">
-                        <rect key="frame" x="60" y="37" width="204" height="87"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                        <string key="text">sfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfassfas</string>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="20" y="104" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="20" y="120" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="20" y="132" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="20" y="149" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -44,9 +37,8 @@
             <point key="canvasLocation" x="-390.5" y="-216"/>
             <connections>
                 <outlet property="Title" destination="4" id="name-outlet-4"/>
-                <outlet property="Description" destination="5" id="name-outlet-5"/>
-                <outlet property="Location" destination="6" id="name-outlet-6"/>
-                <outlet property="Date" destination="7" id="name-outlet-7"/>
+                <outlet property="Location" destination="16" id="name-outlet-16"/>
+                <outlet property="Date" destination="17" id="name-outlet-17"/>
             </connections>
             <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="0"/>
         </tableViewCell>
@@ -69,5 +61,7 @@
         <image name="Assets/speakers.png" width="140" height="140"/>
         <image name="Assets/venues.png" width="140" height="140"/>
         <image name="Assets/workshops.png" width="140" height="140"/>
+        <image name="Assets/clock.png" width="85" height="85"/>
+        <image name="Assets/locmarker.png" width="90" height="90"/>
     </resources>
 </document>
