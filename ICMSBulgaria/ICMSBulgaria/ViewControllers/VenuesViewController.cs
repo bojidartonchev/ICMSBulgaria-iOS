@@ -98,7 +98,7 @@ namespace ICMSBulgaria
                             "south-eastern Europe. It was opened in 1981 in celebration of Bulgaria's 1300th anniversary.");
             mapView.AddAnnotation(annotation);
 
-            annotation = new VenueAnnotation(new CLLocationCoordinate2D(42.6843099, 23.2949802), "Hotel Forum", "THotel Forum is a business hotel located near the city center with convenient transport links to important administrative centers and sightseeing");
+            annotation = new VenueAnnotation(new CLLocationCoordinate2D(42.6843099, 23.2949802), "Hotel Forum", "Hotel Forum is a business hotel located near the city center with convenient transport links to important administrative centers and sightseeing");
             mapView.AddAnnotation(annotation);
 
             annotation = new VenueAnnotation(new CLLocationCoordinate2D(42.68146, 23.3036613), "SBALBB „Sveta Sofia“", "The Specialized Hospital for Pulmonary Diseases is the only one in the country," +

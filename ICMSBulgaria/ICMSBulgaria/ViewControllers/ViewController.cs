@@ -1,4 +1,5 @@
 ﻿using CoreGraphics;
+using Foundation;
 using System;
 
 using UIKit;
@@ -35,30 +36,39 @@ namespace ICMSBulgaria
             this.NavigationController.NavigationBar.ShadowImage = new UIImage();
             this.NavigationController.NavigationBar.Translucent = true;
 
-            //SetupButtons();
+            SetupButtons();
         }
 
         private void SetupButtons()
         {
-            var imageSize = NewsButton.ImageView.Frame.Size;
-            var titleSize = NewsButton.TitleLabel.Frame.Size;
-            var totalHeight = (imageSize.Height + titleSize.Height + 10);
-            NewsButton.Frame = new CGRect(20, 50, 200, 50);
-            NewsButton.SetImage(UIImage.FromFile("Assets/news.png"), UIControlState.Normal);
-            NewsButton.ImageEdgeInsets = new UIEdgeInsets(-(totalHeight - imageSize.Height),
-                                            0.0f,
-                                            0.0f,
-                                            -titleSize.Width);
+            var buttonWidth = 50; //Square button 50x50;
+            var buttonHeight = 75;
 
-            NewsButton.TitleEdgeInsets = new UIEdgeInsets(0.0f,
-                                                    -imageSize.Width,
-                                                    -(totalHeight - titleSize.Height),
-                                                    0.0f);
+            var parentHeight = View.Bounds.Height;
+            var parentWidth = View.Bounds.Width;
 
-            NewsButton.ContentEdgeInsets = new UIEdgeInsets(0.0f,
-                                                    0.0f,
-                                                    titleSize.Height,
-                                                    0.0f);
+            var sectionHeight = (parentHeight / 5);
+            var sectionWidth = (parentWidth / 3);
+
+            var buttonPaddingX = (sectionWidth - buttonWidth) / 2;
+            var buttonPaddingY = (sectionHeight - buttonWidth) / 2;
+
+            //First line
+            this.NewsButton.Frame = new CGRect(buttonPaddingX, sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            this.ProgramButton.Frame = new CGRect(sectionWidth + buttonPaddingX, sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            this.WorkshopsButton.Frame = new CGRect(2 *sectionWidth + buttonPaddingX, sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            //Second Line
+            this.SpeakersButton.Frame = new CGRect(buttonPaddingX, 2 *sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            this.NetworkingButton.Frame = new CGRect(2 * sectionWidth + buttonPaddingX, 2 * sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            //Third Line
+            this.VenuesButton.Frame = new CGRect(buttonPaddingX, 3 * sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
+
+            this.ContactsButton.Frame = new CGRect(2 * sectionWidth + buttonPaddingX, 3 * sectionHeight + buttonPaddingY, buttonWidth, buttonHeight);
         }
     }
 }

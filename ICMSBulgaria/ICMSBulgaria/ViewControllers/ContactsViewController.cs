@@ -31,13 +31,48 @@ namespace ICMSBulgaria
             newsImage.Layer.MasksToBounds = true;
             View.AddSubview(newsImage);
 
-            var newsDate = new UILabel();
-            newsDate.Frame = new CGRect(15, 250, View.Bounds.Width - 30, 30);
-            newsDate.Font = UIFont.PreferredSubheadline;
-            newsDate.Text = String.Format("Email:aaaa@abv.bg");
-            newsDate.TextAlignment = UITextAlignment.Center;
-            View.AddSubview(newsDate);
+            var adress = new UILabel();
+            adress.Frame = new CGRect(15, 250, View.Bounds.Width - 30, 30);
+            adress.Font = UIFont.PreferredSubheadline;
+            adress.TextAlignment = UITextAlignment.Center;            
+            var attchment = new NSTextAttachment();
+            attchment.Image = UIImage.FromFile("Assets/locmarker.png");
+            attchment.Bounds = new CGRect(0, -2, 14, 14);
+            var newText = new NSMutableAttributedString();
+            newText.Append(NSAttributedString.CreateFrom(attchment));
+            NSAttributedString s = new NSAttributedString("1431 Bulgaria, Sofia 2 Zdrave Str.");
+            newText.Append(s);
+            adress.AttributedText = newText;
+            View.AddSubview(adress);
 
+
+            var phone = new UILabel();
+            phone.Frame = new CGRect(15, 290, View.Bounds.Width - 30, 30);
+            phone.Font = UIFont.PreferredSubheadline;
+            phone.TextAlignment = UITextAlignment.Center;
+            var attchment2 = new NSTextAttachment();
+            attchment2.Image = UIImage.FromFile("Assets/phone_number_telephone-512.png");
+            attchment2.Bounds = new CGRect(0, -2, 14, 14);
+            var newText2 = new NSMutableAttributedString();
+            newText2.Append(NSAttributedString.CreateFrom(attchment2));
+            NSAttributedString s2 = new NSAttributedString("+359 887004467");
+            newText2.Append(s2);
+            phone.AttributedText = newText2;
+            View.AddSubview(phone);
+
+            var mail = new UILabel();
+            mail.Frame = new CGRect(15, 330, View.Bounds.Width - 30, 30);
+            mail.Font = UIFont.PreferredSubheadline;
+            mail.TextAlignment = UITextAlignment.Center;
+            var attchment3 = new NSTextAttachment();
+            attchment3.Image = UIImage.FromFile("Assets/12633-200.png");
+            attchment3.Bounds = new CGRect(0, -2, 14, 14);
+            var newText3 = new NSMutableAttributedString();
+            newText3.Append(NSAttributedString.CreateFrom(attchment3));
+            NSAttributedString s3 = new NSAttributedString("info@icmsbg.org");
+            newText3.Append(s3);
+            mail.AttributedText = newText3;
+            View.AddSubview(mail);
         }
     }
 }

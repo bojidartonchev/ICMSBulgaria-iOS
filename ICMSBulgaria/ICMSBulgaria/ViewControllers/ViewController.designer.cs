@@ -36,6 +36,14 @@ namespace ICMSBulgaria
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton SpeakersButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VenuesButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton WorkshopsButton { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -63,6 +71,16 @@ namespace ICMSBulgaria
             if (ProgramButton != null) {
                 ProgramButton.Dispose ();
                 ProgramButton = null;
+            }
+
+            if (SpeakersButton != null) {
+                SpeakersButton.Dispose ();
+                SpeakersButton = null;
+            }
+
+            if (VenuesButton != null) {
+                VenuesButton.Dispose ();
+                VenuesButton = null;
             }
 
             if (WorkshopsButton != null) {

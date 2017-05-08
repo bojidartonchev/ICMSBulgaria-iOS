@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -41,8 +41,8 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="2292" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="265" width="97" height="30"/>
-                                <state key="normal" title="Speakers">
+                                <rect key="frame" x="46" y="301" width="64" height="65"/>
+                                <state key="normal" backgroundImage="Assets/speakers.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -51,9 +51,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="2086" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="36" y="402" width="80" height="30"/>
+                                <rect key="frame" x="36" y="402" width="65" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Venues">
+                                <state key="normal" backgroundImage="Assets/venues.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -65,8 +65,8 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="2832" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="264" y="129" width="76" height="30"/>
-                                <state key="normal" title="Program">
+                                <rect key="frame" x="155" y="167" width="65" height="65"/>
+                                <state key="normal" backgroundImage="Assets/schedule.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -75,8 +75,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3625" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="250" y="265" width="105" height="30"/>
-                                <state key="normal" title="Workshops">
+                                <rect key="frame" x="256" y="167" width="64" height="65"/>
+                                <state key="normal" backgroundImage="Assets/workshops.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -85,8 +85,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4429" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="246" y="434" width="109" height="30"/>
-                                <state key="normal" title="Networking">
+                                <rect key="frame" x="265" y="301" width="65" height="65"/>
+                                <state key="normal" backgroundImage="Assets/networking.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -95,18 +95,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4697" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="36" y="174" width="46" height="30"/>
-                                <state key="normal" title="News">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.17254901960784314" blue="0.28235294117647058" alpha="1"/>
-                                </state>
+                                <rect key="frame" x="46" y="167" width="70" height="65"/>
                                 <connections>
                                     <segue id="4836" destination="193" kind="show"/>
                                 </connections>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" backgroundImage="Assets/news.png">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.17254901960784314" blue="0.28235294117647058" alpha="1"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4871" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="46" y="462" width="143" height="30"/>
-                                <state key="normal" title="Contacts">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4871" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="256" y="400" width="65" height="65"/>
+                                <state key="normal" backgroundImage="Assets/contact.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
@@ -167,6 +167,8 @@
                         <outlet property="MainMenuImageBackground" destination="4685" id="name-outlet-4685"/>
                         <outlet property="NewsButton" destination="4697" id="name-outlet-4697"/>
                         <outlet property="ContactsButton" destination="4871" id="name-outlet-4871"/>
+                        <outlet property="VenuesButton" destination="2086" id="name-outlet-2086"/>
+                        <outlet property="SpeakersButton" destination="2292" id="name-outlet-2292"/>
                     </connections>
                     <navigationItem title="ICMS Bulgaria" id="189" key="navigationItem"/>
                 </viewController>
@@ -178,7 +180,7 @@
             <objects>
                 <navigationController id="19" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="21">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -277,17 +279,19 @@
         <image name="Assets/tomashanke.jpg" width="518" height="480"/>
         <image name="Assets/backgroundmain.jpg" width="1440" height="2560"/>
         <image name="Assets/backgroundsecondary.jpg" width="1440" height="2560"/>
-        <image name="Assets/contact.png" width="140" height="140"/>
-        <image name="Assets/networking.png" width="140" height="140"/>
-        <image name="Assets/news.png" width="140" height="140"/>
-        <image name="Assets/schedule.png" width="140" height="140"/>
+        <image name="Assets/contact.png" width="140" height="190"/>
+        <image name="Assets/networking.png" width="140" height="190"/>
+        <image name="Assets/news.png" width="140" height="190"/>
+        <image name="Assets/schedule.png" width="140" height="190"/>
         <image name="Assets/sessions.png" width="140" height="140"/>
-        <image name="Assets/speakers.png" width="140" height="140"/>
-        <image name="Assets/venues.png" width="140" height="140"/>
-        <image name="Assets/workshops.png" width="140" height="140"/>
+        <image name="Assets/speakers.png" width="140" height="190"/>
+        <image name="Assets/venues.png" width="140" height="190"/>
+        <image name="Assets/workshops.png" width="140" height="190"/>
         <image name="Assets/icmsbg.png" width="815" height="557"/>
         <image name="Assets/clock.png" width="85" height="85"/>
         <image name="Assets/locmarker.png" width="90" height="90"/>
+        <image name="Assets/12633-200.png" width="200" height="200"/>
+        <image name="Assets/phone_number_telephone-512.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
